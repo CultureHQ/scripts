@@ -1,9 +1,8 @@
 #!/usr/bin/env node
-/* eslint-disable no-console */
 
 const glob = require("glob");
 const path = require("path");
-const spawn = require("cross-spawn");
+const { spawnSync } = require("child_process");
 
 const [executor, binary, script, ...args] = process.argv;
 
@@ -16,7 +15,7 @@ if (script) {
     throw new Error(`Unknown script "${script}".`);
   }
 
-  const result = spawn.sync(executor, [scriptPath, ...args], { stdio: "inherit" });
+  const result = spawnSync(executor, [scriptPath, ...args], { stdio: "inherit" });
 
   if (!result.signal) {
     process.exit(result.status);

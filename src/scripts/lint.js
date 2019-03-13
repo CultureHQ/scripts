@@ -1,5 +1,5 @@
 const path = require("path");
-const spawn = require("cross-spawn");
+const { spawnSync } = require("child_process");
 const yargsParser = require("yargs-parser");
 
 const { hasPkgFile, hasPkgProp, resolveBin } = require("../utils");
@@ -27,6 +27,6 @@ if (parsedArgs._.length > 0) {
   params.push(".");
 }
 
-const result = spawn.sync(resolveBin("eslint"), params, { stdio: "inherit" });
+const result = spawnSync(resolveBin("eslint"), params, { stdio: "inherit" });
 
 process.exit(result.status);

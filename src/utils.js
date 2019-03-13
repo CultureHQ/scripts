@@ -31,7 +31,7 @@ const resolveBin = exec => {
   try {
     const modPkgPath = require.resolve(`${exec}/package.json`);
 
-    /* eslint-disable-next-line global-require, import/no-dynamic-require */
+    // eslint-disable-next-line import/no-dynamic-require
     const { bin } = require(modPkgPath);
     const binExec = typeof bin === "string" ? bin : bin[exec];
     const binPath = path.join(path.dirname(modPkgPath), binExec);

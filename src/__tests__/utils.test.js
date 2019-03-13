@@ -2,7 +2,7 @@ jest.mock("read-pkg-up", () => ({
   sync: jest.fn(() => ({
     pkg: { name: "foo" },
     path: "/foo/package.json"
-  })),
+  }))
 }));
 
 let readPkgUpSyncMock;
@@ -28,14 +28,14 @@ test("hasPkgDep", () => {
     pkg: {
       name: "foo",
       peerDependencies: {
-        "react": "^16",
+        react: "^16",
         "react-dom": "^16"
       },
-      "dependencies": {
+      dependencies: {
         "react-modal": "^3"
       },
-      "devDependencies": {
-        "eslint": "^5"
+      devDependencies: {
+        eslint: "^5"
       }
     }
   });
