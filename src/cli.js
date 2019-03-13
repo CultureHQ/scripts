@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const glob = require("glob");
+const fs = require("fs");
 const path = require("path");
 const { spawnSync } = require("child_process");
 
@@ -41,7 +41,7 @@ if (script) {
 }
 
 const scriptsPath = path.join(__dirname, "scripts/");
-const scriptsAvailable = glob.sync(path.join(__dirname, "scripts", "*")).map(scriptPath => (
+const scriptsAvailable = fs.readdirSync(path.join(__dirname, "scripts")).map(scriptPath => (
   scriptPath.replace(scriptsPath, "").replace(/\.js$/, "")
 ));
 
