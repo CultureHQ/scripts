@@ -5,6 +5,8 @@ const which = require("which");
 
 const { pkg, path: pkgPath } = readPkgUp.sync({ cwd: fs.realpathSync(process.cwd()) });
 
+const fromPkgRoot = file => path.join(path.dirname(pkgPath), file);
+
 const hasPkgFile = file => fs.existsSync(path.join(path.dirname(pkgPath), file));
 const hasPkgProp = prop => Object.prototype.hasOwnProperty.call(pkg, prop);
 
@@ -37,6 +39,7 @@ const resolveBin = exec => {
 };
 
 module.exports = {
+  fromPkgRoot,
   hasPkgFile,
   hasPkgProp,
   resolveBin
