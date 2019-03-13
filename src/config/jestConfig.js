@@ -1,7 +1,7 @@
 const path = require("path");
 const { fromPkgRoot, hasPkgDep, hasPkgFile } = require("../utils");
 
-const config = {
+const jestConfig = {
   roots: [
     fromPkgRoot("src")
   ],
@@ -11,16 +11,18 @@ const config = {
     "/node_modules/",
     "__mocks__"
   ],
-  testRegex: ".test.js",
+  testRegex: "\\.test\\.js$",
   testURL: "http://localhost"
 };
 
 if (hasPkgDep("react-testing-library")) {
-  config.setupFilesAfterEnv.push(path.join(__dirname, "..", "config", "setupReactTests.js"));
+  jestConfig.setupFilesAfterEnv.push(
+    path.join(__dirname, "..", "config", "setupReactTests.js")
+  );
 }
 
 if (hasPkgFile("setupTests.js")) {
-  config.setupFilesAfterEnv.push("./setupTests.js");
+  jestConfig.setupFilesAfterEnv.push("./setupTests.js");
 }
 
-module.exports = config;
+module.exports = jestConfig;

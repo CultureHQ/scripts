@@ -7,7 +7,8 @@
     "chq-scripts": "src/cli.js"
   },
   "scripts": {
-    "lint": "node src/cli.js lint"
+    "lint": "node src/cli.js lint",
+    "test": "node src/cli.js test"
   },
   "repository": {
     "type": "git",
