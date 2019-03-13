@@ -3,12 +3,21 @@ const path = require("path");
 const readPkgUp = require("read-pkg-up");
 const which = require("which");
 
-const { pkg, path: pkgPath } = readPkgUp.sync({ cwd: fs.realpathSync(process.cwd()) });
+const { hasOwnProperty } = Object.prototype;
+const { pkg, path: pkgPath } = readPkgUp.sync({
+  cwd: fs.realpathSync(process.cwd())
+});
 
 const fromPkgRoot = file => path.join(path.dirname(pkgPath), file);
 
+const hasPkgDep = dep => (
+  ["dependencies", "devDependencies", "peerDependencies"].some(key => (
+    pkg[key] && hasOwnProperty.call(pkg[key], dep)
+  ))
+);
+
 const hasPkgFile = file => fs.existsSync(path.join(path.dirname(pkgPath), file));
-const hasPkgProp = prop => Object.prototype.hasOwnProperty.call(pkg, prop);
+const hasPkgProp = prop => hasOwnProperty.call(pkg, prop);
 
 const resolveBin = exec => {
   let execPath;
@@ -24,7 +33,8 @@ const resolveBin = exec => {
 
     /* eslint-disable-next-line global-require, import/no-dynamic-require */
     const { bin } = require(modPkgPath);
-    const binPath = path.join(path.dirname(modPkgPath), typeof bin === "string" ? bin : bin[exec]);
+    const binExec = typeof bin === "string" ? bin : bin[exec];
+    const binPath = path.join(path.dirname(modPkgPath), binExec);
 
     if (binPath === execPath) {
       return exec;
@@ -40,6 +50,7 @@ const resolveBin = exec => {
 
 module.exports = {
   fromPkgRoot,
+  hasPkgDep,
   hasPkgFile,
   hasPkgProp,
   resolveBin
