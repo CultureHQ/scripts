@@ -1,5 +1,5 @@
 build/
 coverage/
 dist/
-docs/index.js
+docs/
 node_modules/

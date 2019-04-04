@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [0.1.3] - 2019-04-04
+### Added
+- The `babel-jest` dependency so packages using this toolkit won't need to install it.
+
+### Changed
+- `eslint` now ignores the entire `docs` directory.
+
 ## [0.1.2] - 2019-04-04
 ### Changed
 - Bump dependencies, including newer `@culturehq/eslint-config`.
@@ -18,7 +25,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Initial release! 🎉
 
-[Unreleased]: https://github.com/CultureHQ/scripts/compare/v0.1.2...HEAD
+[Unreleased]: https://github.com/CultureHQ/scripts/compare/v0.1.3...HEAD
+[0.1.3]: https://github.com/CultureHQ/scripts/compare/v0.1.2...v0.1.3
 [0.1.2]: https://github.com/CultureHQ/scripts/compare/v0.1.1...v0.1.2
 [0.1.1]: https://github.com/CultureHQ/scripts/compare/v0.1.0...v0.1.1
 [0.1.0]: https://github.com/CultureHQ/scripts/compare/54cad2...v0.1.0
