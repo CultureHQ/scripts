@@ -6,7 +6,7 @@ const jestConfig = {
     fromPkgRoot("src")
   ],
   setupFilesAfterEnv: [],
-  testEnvironment: hasPkgDep("react") ? "jsdom" : "node",
+  testEnvironment: "jsdom",
   testPathIgnorePatterns: [
     "/node_modules/",
     "__mocks__"
