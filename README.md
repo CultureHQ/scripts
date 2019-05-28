@@ -44,3 +44,11 @@ If you're using `react-testing-library`, `chq-scripts` will automatically requir
 ## Development
 
 Ensure you have `node` and `yarn` installed on your system. Then run `yarn` in the root of the repository to install the dependencies. Tests are run with `yarn test` and linting is run with `yarn lint`.
+
+## Contributing
+
+Bug reports and pull requests are welcome on GitHub at https://github.com/CultureHQ/scripts.
+
+## License
+
+The gem is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
