@@ -15,7 +15,7 @@ const jestConfig = {
   testURL: "http://localhost"
 };
 
-if (hasPkgDep("react-testing-library")) {
+if (hasPkgDep("@testing-library/react")) {
   jestConfig.setupFilesAfterEnv.push(
     path.join(__dirname, "..", "config", "setupReactTests.js")
   );

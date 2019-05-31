@@ -39,7 +39,7 @@ Runs `jest` with a pre-built configuration from [`src/config/jestConfig.js`](src
 
 If you need to do something special at the beginning of the tests (e.g., setting up `react-modal`), `chq-scripts` supports adding a `setupTests.js` file at the root of the repository.
 
-If you're using `react-testing-library`, `chq-scripts` will automatically require the `cleanup-after-each` hook so that you don't have to.
+If you're using `@testing-library/react`, `chq-scripts` will automatically require the `cleanup-after-each` hook so that you don't have to.
 
 ## Development
 

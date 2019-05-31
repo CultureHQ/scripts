@@ -6,6 +6,13 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [1.0.0] - 2019-05-31
+### Added
+- Support the `@testing-library/react` automatic cleanup.
+
+### Removed
+- Stop supporting the `react-testing-library` automatic cleanup.
+
 ## [0.2.1] - 2019-05-30
 ### Changed
 - Again bump the `@culturehq/eslint-config` dependency.
@@ -33,7 +40,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 ### Added
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v0.2.1...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v1.0.0...HEAD
+[1.0.0]: https://github.com/CultureHQ/scripts/compare/v0.2.1...v1.0.0
 [0.2.1]: https://github.com/CultureHQ/scripts/compare/v0.2.0...v0.2.1
 [0.2.0]: https://github.com/CultureHQ/scripts/compare/v0.1.3...v0.2.0
 [0.1.3]: https://github.com/CultureHQ/scripts/compare/v0.1.2...v0.1.3
