@@ -31,7 +31,7 @@ Runs `eslint` with the `@culturehq/eslint-config` base configuration.
 
 If you want to override the configuration, you can do all of the normal `eslint` config patterns of either creating a `.eslintrc` file, a `.eslintrc.js` file, putting a `eslintConfig` prop in your `package.json`, or passing the `--config` flag on the command line.
 
-To make sure you're extending the config for this project, make sure you add `extends: ["@culturehq"]` to your config.
+To make sure you're extending the config for this project, make sure you add `extends: ["@culturehq"]` to your config. If there are conflicts with your version of `eslint`, it's possible this config will be nested under the `@culturehq/scripts` directory, in which case you would need to add `extends: ["./node_modules/@culturehq/scripts/node_modules/@culturehq/eslint-config"]` to your config.
 
 ### `test`
 

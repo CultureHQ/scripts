@@ -21,6 +21,10 @@ if (!args.includes("--no-cache")) {
   params.push("--cache");
 }
 
+if (!args.includes("--resolve-plugins-relative-to")) {
+  params.push("--resolve-plugins-relative-to", path.join(__dirname, "..", ".."));
+}
+
 if (parsedArgs._.length > 0) {
   params.push(...args.filter(arg => !parsedArgs._.includes(arg) || /\.jsx?$/.test(arg)));
 } else {

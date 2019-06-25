@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [2.1.0] - 2019-06-25
+
+### Changed
+
+- Set the `--resolve-plugins-relative-to` option for `eslint` so that the plugins can get properly resolved when linting.
+
 ## [2.0.0] - 2019-06-24
 
 ### Changed
@@ -62,7 +68,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v2.0.0...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v2.1.0...HEAD
+[2.1.0]: https://github.com/CultureHQ/scripts/compare/v2.0.0...v2.1.0
 [2.0.0]: https://github.com/CultureHQ/scripts/compare/v1.0.0...v2.0.0
 [1.0.0]: https://github.com/CultureHQ/scripts/compare/v0.2.1...v1.0.0
 [0.2.1]: https://github.com/CultureHQ/scripts/compare/v0.2.0...v0.2.1
