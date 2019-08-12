@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [3.0.1] - 2019-08-12
+
+### Removed
+
+- The functionality of automatically adding `@testing-library/react/cleanup-after-each` to `setupFilesAfterEnv` for `jest` because it is deprecated with the latest version of react.
+
 ## [3.0.0] - 2019-08-12
 
 ### Changed
@@ -86,7 +92,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v3.0.0...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v3.0.1...HEAD
+[3.0.1]: https://github.com/CultureHQ/scripts/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/CultureHQ/scripts/compare/v2.3.0...v3.0.0
 [2.3.0]: https://github.com/CultureHQ/scripts/compare/v2.2.0...v2.3.0
 [2.2.0]: https://github.com/CultureHQ/scripts/compare/v2.1.0...v2.2.0
