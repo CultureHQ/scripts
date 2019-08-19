@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+### Changed-
+
+- Bumped the `@culturehq/eslint-config` dep to `3.1.0`.
+- Bumped the `eslint` dep to `6.2.0`.
+
 ## [3.0.1] - 2019-08-12
 
 ### Removed
