@@ -6,7 +6,9 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
-### Changed-
+## [3.1.0] - 2019-08-19
+
+### Changed
 
 - Bumped the `@culturehq/eslint-config` dep to `3.1.0`.
 - Bumped the `eslint` dep to `6.2.0`.
@@ -97,7 +99,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v3.0.1...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v3.1.0...HEAD
+[3.1.0]: https://github.com/CultureHQ/scripts/compare/v3.0.1...v3.1.0
 [3.0.1]: https://github.com/CultureHQ/scripts/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/CultureHQ/scripts/compare/v2.3.0...v3.0.0
 [2.3.0]: https://github.com/CultureHQ/scripts/compare/v2.2.0...v2.3.0
