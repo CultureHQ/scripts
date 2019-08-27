@@ -146,10 +146,10 @@
     exec-sh "^0.3.2"
     minimist "^1.2.0"
 
-"@culturehq/eslint-config@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@culturehq/eslint-config/-/eslint-config-4.0.0.tgz#20f644a9ec8198aaecf2dac0c7cfad50429abd15"
-  integrity sha512-Jl/oFmjilnQ9kWE553WgZub3Myob60xWy55Jly2IhXqrqfk8ayDgrgobtNW5R9JvW9oNl22rEh/EFZoA7Z2dKw==
+"@culturehq/eslint-config@^4.0.1":
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/@culturehq/eslint-config/-/eslint-config-4.0.1.tgz#6fe77492f7c111fd9ed348d7f09d134a5b9c260f"
+  integrity sha512-wq85iOw9oAMJ0VDnpoxbMaa7ZhJlMQLNIHqZKfT/CJCd7f942nl5Yh2civ2LvoH0QX8H0eX01hUdM1u25U73pg==
   dependencies:
     "@typescript-eslint/eslint-plugin" "^2.0.0"
     "@typescript-eslint/parser" "^2.0.0"
