@@ -2,7 +2,7 @@ const path = require("path");
 const { spawnSync } = require("child_process");
 const yargsParser = require("yargs-parser");
 
-const { hasPkgFile, hasPkgProp, resolveBin } = require("../utils");
+const { hasPkgFile, hasPkgProp, pkgLog, resolveBin } = require("../utils");
 
 const args = process.argv.slice(2);
 const parsedArgs = yargsParser(args);
@@ -25,12 +25,17 @@ if (!args.includes("--resolve-plugins-relative-to")) {
   params.push("--resolve-plugins-relative-to", path.join(__dirname, "..", ".."));
 }
 
+if (!args.includes("--ext")) {
+  params.push("--ext", ".js,.ts,.tsx");
+}
+
 if (parsedArgs._.length > 0) {
   params.push(...args.filter(arg => !parsedArgs._.includes(arg) || /\.jsx?$/.test(arg)));
 } else {
   params.push(".");
 }
 
+pkgLog("eslint", params);
 const result = spawnSync(resolveBin("eslint"), params, { stdio: "inherit" });
 
 process.exit(result.status);

@@ -6,6 +6,16 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [4.0.0] - 2019-08-27
+
+### Added
+
+- Better logging so that the commands that end up being run can be debugged.
+
+### Changed
+
+- Bumped the `@culturehq/eslint-config` dep to `4.0.0`.
+
 ## [3.1.0] - 2019-08-19
 
 ### Changed
@@ -99,7 +109,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v3.1.0...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v4.0.0...HEAD
+[4.0.0]: https://github.com/CultureHQ/scripts/compare/v3.1.0...v4.0.0
 [3.1.0]: https://github.com/CultureHQ/scripts/compare/v3.0.1...v3.1.0
 [3.0.1]: https://github.com/CultureHQ/scripts/compare/v3.0.0...v3.0.1
 [3.0.0]: https://github.com/CultureHQ/scripts/compare/v2.3.0...v3.0.0

@@ -3,7 +3,8 @@ const path = require("path");
 
 const { pkgPath, pkg } = require("./findPkg");
 
-const fromPkgRoot = file => path.join(path.dirname(pkgPath), file);
+const pkgRoot = path.dirname(pkgPath);
+const fromPkgRoot = file => path.join(pkgRoot, file);
 
 const { hasOwnProperty } = Object.prototype;
 const hasPkgDep = dep => (
@@ -14,6 +15,11 @@ const hasPkgDep = dep => (
 
 const hasPkgFile = file => fs.existsSync(path.join(path.dirname(pkgPath), file));
 const hasPkgProp = prop => hasOwnProperty.call(pkg, prop);
+
+const pkgLog = (command, params) => {
+  const commandParams = params.join(" ").replace(new RegExp(pkgRoot, "g"), ".");
+  console.log(`\x1b[2m$ ${command} ${commandParams}\x1b[0m`);
+};
 
 const resolveBin = exec => {
   const modPkgPath = require.resolve(`${exec}/package.json`);
@@ -31,5 +37,6 @@ module.exports = {
   hasPkgDep,
   hasPkgFile,
   hasPkgProp,
+  pkgLog,
   resolveBin
 };

@@ -10,7 +10,7 @@ const jestConfig = {
     "/node_modules/",
     "__mocks__"
   ],
-  testRegex: "\\.test\\.js$",
+  testRegex: "\\.test\\.(j|t)sx?$",
   testURL: "http://localhost"
 };
 
