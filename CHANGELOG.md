@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [4.0.2] - 2019-08-28
+
+### Changed
+
+- Specify `moduleFileExtensions` in the jest config so that `d.ts` files can be picked up on test runs.
+
 ## [4.0.1] - 2019-08-27
 
 ### Changed
@@ -115,7 +121,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v4.0.1...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v4.0.2...HEAD
+[4.0.2]: https://github.com/CultureHQ/scripts/compare/v4.0.1...v4.0.2
 [4.0.1]: https://github.com/CultureHQ/scripts/compare/v4.0.0...v4.0.1
 [4.0.0]: https://github.com/CultureHQ/scripts/compare/v3.1.0...v4.0.0
 [3.1.0]: https://github.com/CultureHQ/scripts/compare/v3.0.1...v3.1.0

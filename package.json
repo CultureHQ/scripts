@@ -1,7 +1,7 @@
 {
   "name": "@culturehq/scripts",
-  "version": "4.0.1",
-  "description": "A collection of scripts for JavaScript development",
+  "version": "4.0.2",
+  "description": "A collection of scripts for JavaScript and TypeScript development",
   "main": "src/cli.js",
   "bin": {
     "chq-scripts": "src/cli.js"

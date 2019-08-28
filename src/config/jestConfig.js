@@ -1,6 +1,7 @@
 const { fromPkgRoot, hasPkgFile } = require("../utils");
 
 const jestConfig = {
+  moduleFileExtensions: ["js", "json", "ts", "tsx", "d.ts"],
   roots: [
     fromPkgRoot("src")
   ],
