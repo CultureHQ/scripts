@@ -26,7 +26,7 @@
     "babel-jest": "^24.8.0",
     "eslint": "^6.2.0",
     "jest": "^24.8.0",
-    "yargs-parser": "^13.1.1"
+    "yargs-parser": "^14.0.0"
   },
   "eslintConfig": {
     "extends": [
