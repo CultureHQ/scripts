@@ -38,9 +38,7 @@ To make sure you're extending the config for this project, make sure you add `ex
 
 Runs `jest` with a pre-built configuration from [`src/config/jestConfig.js`](src/config/jestConfig.js).
 
-If you need to do something special at the beginning of the tests (e.g., setting up `react-modal`), `chq-scripts` supports adding a `setupTests.js` file at the root of the repository.
-
-If you're using `@testing-library/react`, `chq-scripts` will automatically require the `cleanup-after-each` hook so that you don't have to.
+If you need to do something special at the beginning of the tests, `chq-scripts` supports adding a `setupTests.js` file at the root of the repository which will be automatically run before `jest` starts.
 
 ## Development
 
