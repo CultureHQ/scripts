@@ -127,7 +127,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v4.0.2...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v4.1.0...HEAD
+[4.1.0]: https://github.com/CultureHQ/scripts/compare/v4.0.2...v4.1.0
 [4.0.2]: https://github.com/CultureHQ/scripts/compare/v4.0.1...v4.0.2
 [4.0.1]: https://github.com/CultureHQ/scripts/compare/v4.0.0...v4.0.1
 [4.0.0]: https://github.com/CultureHQ/scripts/compare/v3.1.0...v4.0.0
