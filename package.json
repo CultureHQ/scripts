@@ -1,6 +1,6 @@
 {
   "name": "@culturehq/scripts",
-  "version": "4.1.1",
+  "version": "5.0.0",
   "description": "A collection of scripts for JavaScript and TypeScript development",
   "main": "src/cli.js",
   "bin": {
@@ -22,9 +22,9 @@
   "homepage": "https://github.com/CultureHQ/scripts#readme",
   "dependencies": {
     "@babel/core": "^7.6.0",
-    "@culturehq/eslint-config": "^4.1.0",
+    "@culturehq/eslint-config": "^5.0.0",
     "babel-jest": "^24.9.0",
-    "eslint": "^6.4.0",
+    "eslint": "^6.6.0",
     "jest": "^24.9.0",
     "yargs-parser": "^16.0.0"
   },
