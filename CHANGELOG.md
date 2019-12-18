@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [5.1.1] - 2019-12-18
+
+### Changed
+
+- Bump dependency on `@culturehq/eslint-config` to `5.1.1`.
+
 ## [5.1.0] - 2019-12-18
 
 ### Changed
