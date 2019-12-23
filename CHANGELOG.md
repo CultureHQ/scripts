@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [5.1.2] - 2019-12-23
+
+### Changed
+
+- Bump dependency on `eslint` to `6.8.0`.
+
 ## [5.1.1] - 2019-12-18
 
 ### Changed
@@ -152,7 +158,10 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v5.0.0...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v5.1.2...HEAD
+[5.1.2]: https://github.com/CultureHQ/scripts/compare/v5.1.1...v5.1.2
+[5.1.1]: https://github.com/CultureHQ/scripts/compare/v5.1.0...v5.1.1
+[5.1.0]: https://github.com/CultureHQ/scripts/compare/v5.0.0...v5.1.0
 [5.0.0]: https://github.com/CultureHQ/scripts/compare/v4.1.1...v5.0.0
 [4.1.1]: https://github.com/CultureHQ/scripts/compare/v4.1.0...v4.1.1
 [4.1.0]: https://github.com/CultureHQ/scripts/compare/v4.0.2...v4.1.0
