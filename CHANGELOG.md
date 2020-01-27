@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 ## [Unreleased]
 
+## [5.1.3] - 2020-01-27
+
+### Changed
+
+- Remove the `__mocks__` path from the test ignore pattern in Jest to allow manually mocking modules.
+
 ## [5.1.2] - 2019-12-23
 
 ### Changed
@@ -158,7 +164,8 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/en/1.0.0/) a
 
 - Initial release! 🎉
 
-[unreleased]: https://github.com/CultureHQ/scripts/compare/v5.1.2...HEAD
+[unreleased]: https://github.com/CultureHQ/scripts/compare/v5.1.3...HEAD
+[5.1.3]: https://github.com/CultureHQ/scripts/compare/v5.1.2...v5.1.3
 [5.1.2]: https://github.com/CultureHQ/scripts/compare/v5.1.1...v5.1.2
 [5.1.1]: https://github.com/CultureHQ/scripts/compare/v5.1.0...v5.1.1
 [5.1.0]: https://github.com/CultureHQ/scripts/compare/v5.0.0...v5.1.0

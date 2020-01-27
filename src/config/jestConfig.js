@@ -7,10 +7,6 @@ const jestConfig = {
   ],
   setupFilesAfterEnv: [],
   testEnvironment: "jsdom",
-  testPathIgnorePatterns: [
-    "/node_modules/",
-    "__mocks__"
-  ],
   testRegex: "\\.test\\.(j|t)sx?$",
   testURL: "http://localhost"
 };
