@@ -1,6 +1,6 @@
 # @culturehq/scripts
 
-[![Build Status](https://github.com/CultureHQ/scripts/workflows/Push/badge.svg)](https://github.com/CultureHQ/scripts/actions)
+[![Build Status](https://github.com/CultureHQ/scripts/workflows/Main/badge.svg)](https://github.com/CultureHQ/scripts/actions)
 [![Package Version](https://img.shields.io/npm/v/@culturehq/scripts.svg)](https://www.npmjs.com/package/@culturehq/scripts)
 
 CultureHQ's CLI toolbox for JavaScript projects.
